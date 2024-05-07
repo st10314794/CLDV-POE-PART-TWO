@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CLDV_POE_PART_TWO.Models.Products>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row g-3">
+    @foreach (var craftworks in Model)
+    {
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="@Url.Content("~/" + craftworks.ImagePath)" class="card-img-top" />
+                    <h5 class="card-title">@craftworks.ProductName</h5>
+                    <p class="card-text">@craftworks.ProductDescription</p>
+                    <p>R @craftworks.Price</p>
+
+                    @if (craftworks.InStock)
+                    {
+                        <p>In Stock</p>
+                    }
+                    else
+                    {
+                        <p>Out of Stock</p>
+                    }
+                    <form asp-controller="Carts" asp-action="AddToCart" method="post">
+                        <input type="hidden" name="productId" value="@craftworks.ProductID" />
+                        <input type="hidden" name="quantity" value="1" />
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    }
+</div>

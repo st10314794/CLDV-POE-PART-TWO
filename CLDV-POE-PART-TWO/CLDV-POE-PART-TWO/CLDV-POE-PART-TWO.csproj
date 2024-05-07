@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-CLDV_POE_PART_TWO-b8950a2b-1d1d-4b31-b5ef-b66af5653d16</UserSecretsId>
+    <RootNamespace>CLDV_POE_PART_TWO</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Images\DALL·E 2024-05-05 02.29.13 - A realistic depiction of a handcrafted metalwork sculpture, crafted from a blend of copper and iron. The sculpture is designed with a combination of i.webp\**" />
+    <Content Remove="wwwroot\Images\DALL·E 2024-05-05 02.29.13 - A realistic depiction of a handcrafted metalwork sculpture, crafted from a blend of copper and iron. The sculpture is designed with a combination of i.webp\**" />
+    <EmbeddedResource Remove="wwwroot\Images\DALL·E 2024-05-05 02.29.13 - A realistic depiction of a handcrafted metalwork sculpture, crafted from a blend of copper and iron. The sculpture is designed with a combination of i.webp\**" />
+    <None Remove="wwwroot\Images\DALL·E 2024-05-05 02.29.13 - A realistic depiction of a handcrafted metalwork sculpture, crafted from a blend of copper and iron. The sculpture is designed with a combination of i.webp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+</Project>

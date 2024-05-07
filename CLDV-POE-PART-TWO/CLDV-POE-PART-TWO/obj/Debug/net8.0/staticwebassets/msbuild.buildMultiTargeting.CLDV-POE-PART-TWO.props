@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CLDV-POE-PART-TWO.props" />
+</Project>

@@ -1,0 +1,277 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CLDV-POE-PART-TWO.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CLDV-POE-PART-TWO.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\3a314397-7a56-4339-b0fb-bfec687326d7_Wooden-Bowl.webp",
+      "PackagePath": "staticwebassets\\Images\\3a314397-7a56-4339-b0fb-bfec687326d7_Wooden-Bowl.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\c73ee910-f71f-43e3-a757-b34bc9773a28_Wooden-Bowl.webp",
+      "PackagePath": "staticwebassets\\Images\\c73ee910-f71f-43e3-a757-b34bc9773a28_Wooden-Bowl.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\e0f30d20-d19b-4c1b-9bc4-6b3bc2888fea_Wooden-Bowl.webp",
+      "PackagePath": "staticwebassets\\Images\\e0f30d20-d19b-4c1b-9bc4-6b3bc2888fea_Wooden-Bowl.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CLDV-POE-PART-TWO.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CLDV-POE-PART-TWO.props",
+      "PackagePath": "build\\CLDV-POE-PART-TWO.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CLDV-POE-PART-TWO.props",
+      "PackagePath": "buildMultiTargeting\\CLDV-POE-PART-TWO.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CLDV-POE-PART-TWO.props",
+      "PackagePath": "buildTransitive\\CLDV-POE-PART-TWO.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

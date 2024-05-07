@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CLDV-POE-PART-TWO.props" />
+</Project>
