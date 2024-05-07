@@ -1,0 +1,42 @@
+﻿@model CLDV_POE_PART_TWO.ViewModels.CartViewModel
+
+
+<h1>Shopping Cart</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.CartItems)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.Price</td>
+                <td>
+
+                    <form asp-action="RemoveFromCart" method="post">
+                        <input type="hidden" name="cartItemID" value="@item.CartItemID" />
+                        <button type="submit" class="btn btn-danger">Remove</button>
+                    </form>
+                </td>
+            </tr>
+        }
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Total:</td>
+            <td>@Model.TotalPrice.ToString("C")</td>
+            <td></td>
+
+        </tr>
+    </tbody>
+</table>

@@ -8291,11 +8291,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj",
+      "projectUniqueName": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj",
       "projectName": "CLDV-POE-PART-TWO",
-      "projectPath": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj",
+      "projectPath": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj",
       "packagesPath": "C:\\Users\\Mik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\obj\\",
+      "outputPath": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

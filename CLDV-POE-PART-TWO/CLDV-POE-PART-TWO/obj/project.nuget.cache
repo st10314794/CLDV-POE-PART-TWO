@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uJlzPbys7D+fqnsX4NFfCjsRIe41ygJD4f7gsehuQerOvzZc0w8Rcz5Zy+yarObGkwudbwBMI25RLx/Y1U8efA==",
+  "dgSpecHash": "ouDzLsvtMI8a/RPc0ElOk7q2T7DInW1lNAi1E2Ppkf0+71/zHp/vmPrGHQAVR1VMymD7YKLcDFhJ01FxSIiZdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mik\\source\\repos\\Skuul\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj",
+  "projectFilePath": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mik\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Mik\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

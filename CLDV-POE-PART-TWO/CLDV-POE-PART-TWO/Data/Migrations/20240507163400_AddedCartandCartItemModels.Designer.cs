@@ -4,6 +4,7 @@ using CLDV_POE_PART_TWO.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CLDV_POE_PART_TWO.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240507163400_AddedCartandCartItemModels")]
+    partial class AddedCartandCartItemModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,11 +57,14 @@ namespace CLDV_POE_PART_TWO.Data.Migrations
                     b.Property<int>("ProductID")
                         .HasColumnType("int");
 
+                    b.Property<int>("ProductsProductID")
+                        .HasColumnType("int");
+
                     b.HasKey("CartItemID");
 
                     b.HasIndex("CartID");
 
-                    b.HasIndex("ProductID");
+                    b.HasIndex("ProductsProductID");
 
                     b.ToTable("CartItems");
                 });
@@ -333,8 +339,8 @@ namespace CLDV_POE_PART_TWO.Data.Migrations
 
                     b.HasOne("CLDV_POE_PART_TWO.Models.Products", "Products")
                         .WithMany()
-                        .HasForeignKey("ProductID")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .HasForeignKey("ProductsProductID")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Cart");
