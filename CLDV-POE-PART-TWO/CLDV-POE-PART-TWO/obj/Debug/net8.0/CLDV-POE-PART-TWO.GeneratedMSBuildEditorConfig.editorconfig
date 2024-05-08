@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcVmlld0NhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Mik/Documents/GitHub/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/Views/Checkout/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcT3JkZXJDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Mik/Documents/GitHub/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,10 +64,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Mik/Documents/GitHub/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Mik/Documents/GitHub/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/Views/Orders/OrderConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXE9yZGVyQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Mik/Documents/GitHub/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/CLDV-POE-PART-TWO/Views/Products/AdminIndex.cshtml]
