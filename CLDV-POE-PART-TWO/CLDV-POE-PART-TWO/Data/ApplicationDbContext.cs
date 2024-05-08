@@ -25,5 +25,6 @@ namespace CLDV_POE_PART_TWO.Data
                 .HasForeignKey(ci => ci.ProductID)
                 .OnDelete(DeleteBehavior.Restrict); // Make sure deletions in Products don't cascade in a way that violates foreign keys
         }
+        public DbSet<CLDV_POE_PART_TWO.Models.Order> Order { get; set; } = default!;
     }
 }

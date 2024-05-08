@@ -1,0 +1,27 @@
+﻿@model CLDV_POE_PART_TWO.Models.Order
+
+
+
+
+<h2>Confirm Your Order</h2>
+<div>
+    <h3>Items</h3>
+    <ul>
+        @foreach (var item in Model.OrderItems)
+        {
+            <li>@item.Product.ProductName -  @item.Price </li>
+        }
+    </ul>
+    <p><strong>Total: $@Model.TotalPrice</strong></p>
+</div>
+
+<div>
+    <h3>Address</h3>
+    <p>@Model.Address</p>
+</div>
+
+<form asp-controller="Orders" asp-action="Index" method="post">
+    <input type="hidden" name="orderId" value="@Model.OrderID" />
+    <button type="submit" class="btn btn-success">Place Order</button>
+    <a asp-controller="Carts" asp-action="ViewCart" class="btn btn-warning">Return to Cart</a>
+</form>

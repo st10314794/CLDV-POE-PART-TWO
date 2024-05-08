@@ -36,6 +36,15 @@
             <td>Total:</td>
             <td>@Model.TotalPrice.ToString("C")</td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <form asp-controller="Orders" asp-action="CreateFromCart" method="post">
+                 
+                    <button type="submit" class="btn btn-success">Proceed to Checkout</button>
+
+                </form>
+            </td>
 
         </tr>
     </tbody>
