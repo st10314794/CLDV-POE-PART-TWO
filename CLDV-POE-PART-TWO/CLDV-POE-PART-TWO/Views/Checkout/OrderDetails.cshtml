@@ -1,0 +1,21 @@
+﻿@model CLDV_POE_PART_TWO.Models.Order
+
+<h2>Order Confirmation</h2>
+
+<div>
+    <h3>Items</h3>
+    <ul>
+        @foreach (var item in Model.OrderItems)
+        {
+            <li>@item.Product.ProductName - @item.Price.ToString("C")</li>
+        }
+    </ul>
+    <p><strong>Total: @Model.TotalPrice.ToString("C")</strong></p>
+</div>
+
+<div>
+    <h3>Address</h3>
+    <p>@Model.Address</p>
+</div>
+
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary">Return to Home</a>

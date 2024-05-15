@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using CLDV_POE_PART_TWO.Data;
 using CLDV_POE_PART_TWO.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CLDV_POE_PART_TWO.Controllers
 {
@@ -22,11 +23,54 @@ namespace CLDV_POE_PART_TWO.Controllers
             _userManager = userManager;
         }
 
-        // GET: Orders
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
+        {
+            if (User?.Identity?.IsAuthenticated ?? false)
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    return RedirectToAction("AdminIndex");
+                }
+                else
+                {
+                    return RedirectToAction("ClientIndex");
+                }
+            }
+            else
+            {
+                return RedirectToAction("ClientIndex"); // Default view for non-logged in users
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
+        // GET: Products
+        public async Task<IActionResult> AdminIndex()
         {
             return View(await _context.Order.ToListAsync());
         }
+
+        public async Task<IActionResult> ClientIndex()
+        {
+            return View(await _context.Order.ToListAsync());
+        }
+
+        //public ActionResult Index()
+        //{
+        //    if (User.IsInRole("Admin"))
+        //    {
+        //        return View("AdminIndex", _context.Order.ToList());
+        //    }
+        //    else
+        //    {
+        //        var userOrders = _context.Order.Where(o => o.UserID == User.Identity.Name).ToList();
+        //        return View("ClientIndex", userOrders);
+        //    }
+        //}
+        // GET: Orders
+        //public async Task<IActionResult> Index()
+        //{
+        //    return View(await _context.Order.ToListAsync());
+        //}
 
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -37,6 +81,7 @@ namespace CLDV_POE_PART_TWO.Controllers
             }
 
             var order = await _context.Order
+                 .Include(o => o.User)
                 .FirstOrDefaultAsync(m => m.OrderID == id);
             if (order == null)
             {
@@ -51,6 +96,9 @@ namespace CLDV_POE_PART_TWO.Controllers
         {
             return View();
         }
+
+
+        //Removed because createfromcart method in checkoutcontroller
 
         // POST: Orders/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -68,11 +116,12 @@ namespace CLDV_POE_PART_TWO.Controllers
         //    return View(order);
         //}
 
-     
+
 
 
 
         // GET: Orders/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -93,7 +142,8 @@ namespace CLDV_POE_PART_TWO.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("OrderID,UserID,TotalPrice,OrderDate,Status,CreatedDate,ModifiedDate")] Order order)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int id, [Bind("OrderID,UserID,TotalPrice,Status,CreatedDate,ModifiedDate")] Order order)
         {
             if (id != order.OrderID)
             {

@@ -65,6 +65,8 @@ namespace CLDV_POE_PART_TWO.Controllers
             var product = await _context.Products.FindAsync(productId);
             if (product == null) return NotFound("Product not available.");
 
+            product.InStock = false;  // Mark the product as unavailable
+
             var cart = await _context.Carts.Include(c => c.CartItems)
                                            .SingleOrDefaultAsync(c => c.UserID == user.Id);
 
@@ -109,14 +111,16 @@ namespace CLDV_POE_PART_TWO.Controllers
             return RedirectToAction("ViewCart");
         }
 
-        public async Task<IActionResult> ViewCart()
+
+        [HttpGet]
+        public async Task<IActionResult> ReturnToCart()
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return Challenge();
 
             var cart = await _context.Carts
                                      .Include(c => c.CartItems)
-                                         .ThenInclude(ci => ci.Products)
+                                     .ThenInclude(ci => ci.Products)
                                      .FirstOrDefaultAsync(c => c.UserID == user.Id);
 
             if (cart == null)
@@ -136,8 +140,69 @@ namespace CLDV_POE_PART_TWO.Controllers
                 TotalPrice = cart.CartItems.Sum(item => item.Products.Price)
             };
 
-            return View(cartViewModel);
+            return View("ViewCart", cartViewModel);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> ViewCart()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
+
+            var cart = await _context.Carts
+                                     .Include(c => c.CartItems)
+                                     .ThenInclude(ci => ci.Products)
+                                     .FirstOrDefaultAsync(c => c.UserID == user.Id);
+
+            if (cart == null)
+            {
+                return View(new CartViewModel());
+            }
+
+            var cartViewModel = new CartViewModel
+            {
+                CartItems = cart.CartItems.Select(ci => new CartItemViewModel
+                {
+                    CartItemID = ci.CartItemID,
+                    ProductName = ci.Products.ProductName,
+                    Price = ci.Products.Price,
+                    ImagePath = ci.Products.ImagePath
+                }).ToList(),
+                TotalPrice = cart.CartItems.Sum(item => item.Products.Price)
+            };
+
+            return View("ViewCart", cartViewModel);
+        }
+
+        //public async Task<IActionResult> ViewCart()
+        //{
+        //    var user = await _userManager.GetUserAsync(User);
+        //    if (user == null) return Challenge();
+
+        //    var cart = await _context.Carts
+        //                             .Include(c => c.CartItems)
+        //                                 .ThenInclude(ci => ci.Products)
+        //                             .FirstOrDefaultAsync(c => c.UserID == user.Id);
+
+        //    if (cart == null)
+        //    {
+        //        return View(new CartViewModel());
+        //    }
+
+        //    var cartViewModel = new CartViewModel
+        //    {
+        //        CartItems = cart.CartItems.Select(ci => new CartItemViewModel
+        //        {
+        //            CartItemID = ci.CartItemID,
+        //            ProductName = ci.Products.ProductName,
+        //            Price = ci.Products.Price,
+        //            ImagePath = ci.Products.ImagePath
+        //        }).ToList(),
+        //        TotalPrice = cart.CartItems.Sum(item => item.Products.Price)
+        //    };
+
+        //    return View(cartViewModel);
+        //}
 
 
 

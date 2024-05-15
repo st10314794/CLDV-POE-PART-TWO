@@ -3,49 +3,57 @@
 
 <h1>Shopping Cart</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Total</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.CartItems)
-        {
-            <tr>
-                <td>@item.ProductName</td>
-                <td>@item.Price</td>
-                <td>
 
-                    <form asp-action="RemoveFromCart" method="post">
-                        <input type="hidden" name="cartItemID" value="@item.CartItemID" />
-                        <button type="submit" class="btn btn-danger">Remove</button>
+@if (!Model.CartItems.Any())
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CartItems)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Price</td>
+                    <td>
+
+                        <form asp-action="RemoveFromCart" method="post">
+                            <input type="hidden" name="cartItemID" value="@item.CartItemID" />
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total:</td>
+                <td>@Model.TotalPrice.ToString("C")</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <form asp-controller="Checkout" asp-action="ProceedToCheckout" method="post">
+
+                        <button type="submit" class="btn btn-success">Proceed to Checkout</button>
+
                     </form>
                 </td>
+
             </tr>
-        }
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Total:</td>
-            <td>@Model.TotalPrice.ToString("C")</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <form asp-controller="Checkout" asp-action="CreateFromCart" method="post">
-                 
-                    <button type="submit" class="btn btn-success">Proceed to Checkout</button>
-
-                </form>
-            </td>
-
-        </tr>
-    </tbody>
-</table>
+        </tbody>
+    </table>
+}

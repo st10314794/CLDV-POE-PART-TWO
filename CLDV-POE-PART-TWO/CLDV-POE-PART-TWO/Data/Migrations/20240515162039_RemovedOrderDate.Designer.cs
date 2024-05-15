@@ -4,6 +4,7 @@ using CLDV_POE_PART_TWO.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CLDV_POE_PART_TWO.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240515162039_RemovedOrderDate")]
+    partial class RemovedOrderDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -103,14 +106,9 @@ namespace CLDV_POE_PART_TWO.Data.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("UserID")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("UserOrderNumber")
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("OrderID");
-
-                    b.HasIndex("UserID");
 
                     b.ToTable("Order");
                 });
@@ -402,15 +400,6 @@ namespace CLDV_POE_PART_TWO.Data.Migrations
                     b.Navigation("Cart");
 
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("CLDV_POE_PART_TWO.Models.Order", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserID");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("CLDV_POE_PART_TWO.Models.OrderItem", b =>
