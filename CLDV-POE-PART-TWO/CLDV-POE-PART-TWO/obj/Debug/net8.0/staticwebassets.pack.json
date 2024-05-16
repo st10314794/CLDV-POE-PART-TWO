@@ -5,8 +5,28 @@
       "PackagePath": "staticwebassets\\CLDV-POE-PART-TWO.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\04d450b5-4c15-40a6-b6f4-43dea93ab6a2_Avian Grace.webp",
+      "PackagePath": "staticwebassets\\Images\\04d450b5-4c15-40a6-b6f4-43dea93ab6a2_Avian Grace.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\1485c25e-46bc-45d3-9686-00d48e06b9da_Water Droplet.webp",
+      "PackagePath": "staticwebassets\\Images\\1485c25e-46bc-45d3-9686-00d48e06b9da_Water Droplet.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\33d5c0a8-e359-4a60-8c81-69a609f6ce06_Avian Grace.webp",
+      "PackagePath": "staticwebassets\\Images\\33d5c0a8-e359-4a60-8c81-69a609f6ce06_Avian Grace.webp"
+    },
+    {
       "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\3a314397-7a56-4339-b0fb-bfec687326d7_Wooden-Bowl.webp",
       "PackagePath": "staticwebassets\\Images\\3a314397-7a56-4339-b0fb-bfec687326d7_Wooden-Bowl.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\78b5c121-c284-4bab-888e-9cc7d5cdb2de_Avian Grace.webp",
+      "PackagePath": "staticwebassets\\Images\\78b5c121-c284-4bab-888e-9cc7d5cdb2de_Avian Grace.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\a64d5599-0d60-4aea-b587-f47b9b64ac1c_Avian Grace.webp",
+      "PackagePath": "staticwebassets\\Images\\a64d5599-0d60-4aea-b587-f47b9b64ac1c_Avian Grace.webp"
     },
     {
       "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\c73ee910-f71f-43e3-a757-b34bc9773a28_Wooden-Bowl.webp",
@@ -15,6 +35,10 @@
     {
       "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\e0f30d20-d19b-4c1b-9bc4-6b3bc2888fea_Wooden-Bowl.webp",
       "PackagePath": "staticwebassets\\Images\\e0f30d20-d19b-4c1b-9bc4-6b3bc2888fea_Wooden-Bowl.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\f29d76a5-eae9-49c2-b194-76202a5ee1b2_Orbital Arcs.webp",
+      "PackagePath": "staticwebassets\\Images\\f29d76a5-eae9-49c2-b194-76202a5ee1b2_Orbital Arcs.webp"
     },
     {
       "Id": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\css\\site.css",

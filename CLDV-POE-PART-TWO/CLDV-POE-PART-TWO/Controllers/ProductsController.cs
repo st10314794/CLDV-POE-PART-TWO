@@ -90,8 +90,11 @@ namespace CLDV_POE_PART_TWO.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("ProductId,ProductName,ProductDescription,Price,ImagePath,Image,CategoryID")] Products product)
         {
+           
             if (ModelState.IsValid)
             {
+               
+
                 if (product.Image != null)
                 {
 
@@ -137,11 +140,15 @@ namespace CLDV_POE_PART_TWO.Controllers
         // POST: Products/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+       
+
+      
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductID,ProductName,ProductDescription,Price,InStock,ImagePath,CategoryID")] Products products)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductID,ProductName,ProductDescription,Price,InStock,ImagePath,Image,CategoryID")] Products product)
         {
-            if (id != products.ProductID)
+            if (id != product.ProductID)
             {
                 return NotFound();
             }
@@ -150,12 +157,49 @@ namespace CLDV_POE_PART_TWO.Controllers
             {
                 try
                 {
-                    _context.Update(products);
+                    var existingProduct = await _context.Products.AsNoTracking().FirstOrDefaultAsync(p => p.ProductID == id);
+
+                    if (existingProduct == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Only process the image if a new one is uploaded
+                    if (product.Image != null)
+                    {
+                        // Remove the old image file if a new image is uploaded
+                        if (!string.IsNullOrEmpty(existingProduct.ImagePath))
+                        {
+                            string oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, existingProduct.ImagePath);
+                            if (System.IO.File.Exists(oldImagePath))
+                            {
+                                System.IO.File.Delete(oldImagePath);
+                            }
+                        }
+
+                        // Save the new image
+                        string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images");
+                        string uniqueFileName = Guid.NewGuid().ToString() + "_" + product.Image.FileName;
+                        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await product.Image.CopyToAsync(stream);
+                        }
+                        product.ImagePath = Path.Combine("Images", uniqueFileName);
+                    }
+                    else
+                    {
+                        // Keep the existing image path if no new image is uploaded
+                        product.ImagePath = existingProduct.ImagePath;
+                    }
+
+                    _context.Update(product);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductsExists(products.ProductID))
+                    if (!ProductsExists(product.ProductID))
                     {
                         return NotFound();
                     }
@@ -166,9 +210,10 @@ namespace CLDV_POE_PART_TWO.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryID", products.CategoryID);
-            return View(products);
+            ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryName", product.CategoryID);
+            return View(product);
         }
+
 
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
