@@ -51,7 +51,13 @@ namespace CLDV_POE_PART_TWO.Controllers
 
         public async Task<IActionResult> ClientIndex()
         {
-            return View(await _context.Order.ToListAsync());
+            var user = await _userManager.GetUserAsync(User);
+
+
+            var userOrders = await _context.Order
+                .Where(o=> o.UserID == user.Id)
+                .ToListAsync();
+            return View(userOrders);
         }
 
         //public ActionResult Index()
@@ -75,6 +81,8 @@ namespace CLDV_POE_PART_TWO.Controllers
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var user = await _userManager.GetUserAsync(User);
+
             if (id == null)
             {
                 return NotFound();
@@ -83,7 +91,8 @@ namespace CLDV_POE_PART_TWO.Controllers
             var order = await _context.Order
                  .Include(o => o.User)
                 .FirstOrDefaultAsync(m => m.OrderID == id);
-            if (order == null)
+            
+            if (order == null || order.UserID != user.Id)
             {
                 return NotFound();
             }
@@ -180,10 +189,11 @@ namespace CLDV_POE_PART_TWO.Controllers
             {
                 return NotFound();
             }
+            var user = await _userManager.GetUserAsync(User);
 
             var order = await _context.Order
                 .FirstOrDefaultAsync(m => m.OrderID == id);
-            if (order == null)
+            if (order == null || order.UserID != user.Id)
             {
                 return NotFound();
             }
@@ -196,10 +206,22 @@ namespace CLDV_POE_PART_TWO.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var order = await _context.Order.FindAsync(id);
+
+
+            var order = await _context.Order
+       .Include(o => o.OrderItems)
+       .ThenInclude(oi => oi.Product)
+       .FirstOrDefaultAsync(o => o.OrderID == id);
+
+            //var order = await _context.Order
+            //    .FindAsync(id);
+               
+
+                
             if (order != null)
             {
                 _context.Order.Remove(order);
+
             }
 
             await _context.SaveChangesAsync();
