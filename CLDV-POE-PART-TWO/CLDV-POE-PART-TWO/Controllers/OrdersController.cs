@@ -9,6 +9,7 @@ using CLDV_POE_PART_TWO.Data;
 using CLDV_POE_PART_TWO.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
+using CLDV_POE_PART_TWO.Enums;
 
 namespace CLDV_POE_PART_TWO.Controllers
 {
@@ -42,11 +43,17 @@ namespace CLDV_POE_PART_TWO.Controllers
             }
         }
 
+        //  [Authorize(Roles = "Admin")]
+        ////  GET: Products
+        //public async Task<IActionResult> AdminIndex()
+        //{
+        //    return View(await _context.Order.ToListAsync());
+        //}
+
         [Authorize(Roles = "Admin")]
-        // GET: Products
         public async Task<IActionResult> AdminIndex()
         {
-            return View(await _context.Order.ToListAsync());
+            return View(await _context.Order.Include(o => o.User).Include(o => o.OrderItems).ToListAsync());
         }
 
         public async Task<IActionResult> ClientIndex()
@@ -60,23 +67,33 @@ namespace CLDV_POE_PART_TWO.Controllers
             return View(userOrders);
         }
 
-        //public ActionResult Index()
-        //{
-        //    if (User.IsInRole("Admin"))
-        //    {
-        //        return View("AdminIndex", _context.Order.ToList());
-        //    }
-        //    else
-        //    {
-        //        var userOrders = _context.Order.Where(o => o.UserID == User.Identity.Name).ToList();
-        //        return View("ClientIndex", userOrders);
-        //    }
-        //}
-        // GET: Orders
-        //public async Task<IActionResult> Index()
-        //{
-        //    return View(await _context.Order.ToListAsync());
-        //}
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> ChangeStatus(int orderID, OrderStatus orderStatus)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
+
+            var order = await _context.Order.FindAsync(orderID);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+           
+
+            order.OrderStatus = orderStatus;
+            _context.Update(order);
+            await _context.SaveChangesAsync();
+
+          
+                return RedirectToAction(nameof(AdminIndex));
+           
+        }
+
+
 
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)

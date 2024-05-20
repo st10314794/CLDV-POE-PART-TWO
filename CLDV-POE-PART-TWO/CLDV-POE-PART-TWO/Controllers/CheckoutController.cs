@@ -138,7 +138,7 @@ namespace CLDV_POE_PART_TWO.Controllers
               
                 CreatedDate = DateTime.Now,
                 ModifiedDate = DateTime.Now,
-                Status = "Pending", // Initial status
+                //Status = "Pending", // Initial status
                 TotalPrice = cart.CartItems.Sum(item => item.Products.Price) // Calculate total price
             };
 
@@ -198,7 +198,7 @@ namespace CLDV_POE_PART_TWO.Controllers
             }
 
             // Logic to place the order
-            order.Status = "Placed";
+           // order.Status = "Placed";
             await _context.SaveChangesAsync();
 
             return RedirectToAction("OrderConfirmation", new { orderId = orderId });

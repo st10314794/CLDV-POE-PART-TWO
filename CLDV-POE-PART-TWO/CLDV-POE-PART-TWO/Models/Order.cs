@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using CLDV_POE_PART_TWO.Enums;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace CLDV_POE_PART_TWO.Models
@@ -14,7 +15,7 @@ namespace CLDV_POE_PART_TWO.Models
         [Display(Name = "Total Price")]
         public decimal TotalPrice { get; set; }
        
-        public string? Status { get; set; }
+       // public string? Status { get; set; }
 
         [Display(Name = "Order Created")]
 
@@ -29,6 +30,8 @@ namespace CLDV_POE_PART_TWO.Models
 
         public virtual ICollection<OrderItem> OrderItems { get; set; }
         public virtual IdentityUser? User { get; set; }
+        [Display(Name = "Status")]
+        public OrderStatus OrderStatus { get; set; }
 
     }
 }

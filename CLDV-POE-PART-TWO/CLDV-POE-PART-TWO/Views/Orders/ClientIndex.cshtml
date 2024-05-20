@@ -7,9 +7,6 @@
 
 <h1>Orders</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 
 
 
@@ -24,7 +21,7 @@
             </th>
            
             <th>
-                @Html.DisplayNameFor(model => model.Status)
+                @Html.DisplayNameFor(model => model.OrderStatus)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CreatedDate)
@@ -45,7 +42,7 @@
                 </td>
                
                 <td>
-                    @Html.DisplayFor(modelItem => item.Status)
+                    @Html.DisplayFor(modelItem => item.OrderStatus)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.CreatedDate)
