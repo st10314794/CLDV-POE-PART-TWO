@@ -218,32 +218,59 @@ namespace CLDV_POE_PART_TWO.Controllers
             return View(order);
         }
 
-        // POST: Orders/Delete/5
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-
-
             var order = await _context.Order
-       .Include(o => o.OrderItems)
-       .ThenInclude(oi => oi.Product)
-       .FirstOrDefaultAsync(o => o.OrderID == id);
+                                      .Include(o => o.OrderItems)
+                                      .ThenInclude(oi => oi.Product)
+                                      .FirstOrDefaultAsync(o => o.OrderID == id);
 
-            //var order = await _context.Order
-            //    .FindAsync(id);
-               
-
-                
             if (order != null)
             {
-                _context.Order.Remove(order);
+                foreach (var orderItem in order.OrderItems)
+                {
+                    // Assuming you have a property `Availability` in the Product model
+                    orderItem.Product.InStock = true; // Update availability to true
+                    _context.Products.Update(orderItem.Product); // Update the product in the context
+                }
 
+                _context.Order.Remove(order);
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+        // POST: Orders/Delete/5
+        // [HttpPost, ActionName("Delete")]
+        // [ValidateAntiForgeryToken]
+        // public async Task<IActionResult> DeleteConfirmed(int id)
+        // {
+
+
+        //     var order = await _context.Order
+        //.Include(o => o.OrderItems)
+        //.ThenInclude(oi => oi.Product)
+        //.FirstOrDefaultAsync(o => o.OrderID == id);
+
+        //     //var order = await _context.Order
+        //     //    .FindAsync(id);
+
+
+
+        //     if (order != null)
+        //     {
+        //         _context.Order.Remove(order);
+
+        //     }
+
+        //     await _context.SaveChangesAsync();
+        //     return RedirectToAction(nameof(Index));
+        // }
 
         private bool OrderExists(int id)
         {
