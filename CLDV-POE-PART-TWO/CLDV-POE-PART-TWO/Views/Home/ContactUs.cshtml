@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1>Contact Us</h1>
+
+    <div class="form-container">
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter Message here..." required></textarea>
+            </div>
+            <button type="button" id="submit-button" onclick="showMessage()">Submit</button>
+        </form>
+        <span id="submit-message" style="display:none;">Your message has been sent!</span>
+    </div>
+  
+    
+           
+
+
+    
+</div>
