@@ -51,10 +51,32 @@ namespace CLDV_POE_PART_TWO.Controllers
         //}
 
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> AdminIndex()
+        public async Task<IActionResult> AdminIndex(OrderStatus? statusFilter)
         {
-            return View(await _context.Order.Include(o => o.User).Include(o => o.OrderItems).ToListAsync());
+            // Start the query with the necessary includes
+            var query = _context.Order
+                                .Include(o => o.User)
+                                .Include(o => o.OrderItems)
+                                .ThenInclude(oi => oi.Product) // Include related Product if needed
+                                .AsQueryable();
+
+            // Apply the status filter if provided
+            if (statusFilter.HasValue)
+            {
+                query = query.Where(o => o.OrderStatus == statusFilter.Value);
+            }
+
+            // Store the current filter in ViewData to use in the view
+            ViewData["CurrentFilter"] = statusFilter;
+
+            // Execute the query and get the list of orders
+            var orders = await query.ToListAsync();
+
+            // Return the view with the list of orders
+            return View(orders);
         }
+
+
 
         public async Task<IActionResult> ClientIndex()
         {
@@ -99,6 +121,7 @@ namespace CLDV_POE_PART_TWO.Controllers
         public async Task<IActionResult> Details(int? id)
         {
             var user = await _userManager.GetUserAsync(User);
+            bool isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
 
             if (id == null)
             {
@@ -108,11 +131,15 @@ namespace CLDV_POE_PART_TWO.Controllers
             var order = await _context.Order
                  .Include(o => o.User)
                 .FirstOrDefaultAsync(m => m.OrderID == id);
-            
-            if (order == null || order.UserID != user.Id)
+
+            if (!isAdmin)
             {
-                return NotFound();
+                if (order == null || order.UserID != user.Id)
+                {
+                    return NotFound();
+                }
             }
+           
 
             return View(order);
         }
