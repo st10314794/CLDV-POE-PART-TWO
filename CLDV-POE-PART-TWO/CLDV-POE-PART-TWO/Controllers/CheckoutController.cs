@@ -138,8 +138,14 @@ namespace CLDV_POE_PART_TWO.Controllers
               
                 CreatedDate = DateTime.Now,
                 ModifiedDate = DateTime.Now,
-                //Status = "Pending", // Initial status
-                TotalPrice = cart.CartItems.Sum(item => item.Products.Price) // Calculate total price
+                OrderStatus = Enums.OrderStatus.Pending,
+                TotalPrice = cart.CartItems.Sum(item => item.Products.Price), // Calculate total price
+                // Creating order items
+                OrderItems = cart.CartItems.Select(ci => new OrderItem
+                {
+                    ProductID = ci.ProductID,
+                    Price = ci.Products.Price
+                }).ToList()
             };
 
             var userOrders = await _context.Order

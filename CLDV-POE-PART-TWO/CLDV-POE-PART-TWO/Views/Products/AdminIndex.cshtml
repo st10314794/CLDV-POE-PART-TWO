@@ -49,11 +49,19 @@
                  <img src="@Url.Content("~/"+ item.ImagePath)" alt="Product Image"
               style="width:150px; height:auto;" />
                 </td>
+         
+                <td>
+                    @if (item.InStock)
+                    {
+                        <span class="badge bg-success">In Stock</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Out of Stock</span>
+                    }
+                </td>
             <td>
-                @Html.DisplayFor(modelItem => item.InStock)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category.CategoryID)
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ProductID">Edit</a> |

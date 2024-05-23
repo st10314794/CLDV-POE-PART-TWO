@@ -20,35 +20,62 @@
                 @Html.DisplayFor(model => model.User.UserName)
             </dd>
         }
-      
-        <dt class = "col-sm-2">
+
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.TotalPrice)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.TotalPrice)
         </dd>
-      
-        <dt class = "col-sm-2">
+
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.OrderStatus)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.OrderStatus)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.CreatedDate)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.CreatedDate)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.ModifiedDate)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ModifiedDate)
         </dd>
     </dl>
 </div>
+
+
+<!--Added to include products included in the order-->
+<h4>Order Items</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderItems)
+        {
+            <tr>
+                <td>@item.Product.ProductName</td>
+                <td>
+
+                    <img src="@Url.Content("~/"+item.Product.ImagePath)" alt="Product Image" style="width:150px; height:auto;" />
+                </td>
+                <td>@item.Product.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.OrderID">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

@@ -144,6 +144,8 @@ namespace CLDV_POE_PART_TWO.Controllers
 
             var order = await _context.Order
                  .Include(o => o.User)
+                 .Include(o => o.OrderItems)
+                 .ThenInclude(oi => oi.Product)
                 .FirstOrDefaultAsync(m => m.OrderID == id);
 
             if (!isAdmin)
@@ -271,15 +273,22 @@ namespace CLDV_POE_PART_TWO.Controllers
 
             if (order == null)
             {
-                return NotFound(); // Return appropriate response if order is not found
+                return NotFound();
             }
 
             if (order.OrderItems != null && order.OrderItems.Any())
             {
-                var product = order.OrderItems.First().Product;
-                if (product != null)
+
+                foreach (var orderItem in order.OrderItems)
                 {
-                    product.InStock = true;
+
+                    if (orderItem.Product != null)
+                    {
+                        orderItem.Product.InStock = true; 
+                        _context.Products.Update(orderItem.Product); 
+                    }
+
+                
                 }
             }
 
@@ -287,23 +296,6 @@ namespace CLDV_POE_PART_TWO.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
-            //var order = await _context.Order.FindAsync(id);
-            //if (order != null)
-            //{
-            //    _context.Order.Remove(order);
-            //}
-            //var product = order.OrderItems.FirstOrDefault()?.Product;
-
-            //if (product != null)
-            //{
-            //    product.ProductAvailability = true;
-            //}
-
-
-            //_context.Order.Remove(order);
-            //await _context.SaveChangesAsync();
-
-            //return RedirectToAction(nameof(Index));
         }
 
 
