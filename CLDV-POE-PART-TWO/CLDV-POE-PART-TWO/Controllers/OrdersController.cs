@@ -84,9 +84,23 @@ namespace CLDV_POE_PART_TWO.Controllers
 
 
             var userOrders = await _context.Order
-                .Where(o=> o.UserID == user.Id)
+                .Where(o => o.UserID == user.Id)
                 .ToListAsync();
             return View(userOrders);
+        }
+
+        public async Task<IActionResult> ClientOrderHistory()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var orders = await _context.Order
+                                       .Where(o => o.UserID == user.Id && o.OrderStatus != OrderStatus.Pending)
+                                       .ToListAsync();
+            return View(orders);
         }
 
 
@@ -104,15 +118,15 @@ namespace CLDV_POE_PART_TWO.Controllers
                 return NotFound();
             }
 
-           
+
 
             order.OrderStatus = orderStatus;
             _context.Update(order);
             await _context.SaveChangesAsync();
 
-          
-                return RedirectToAction(nameof(AdminIndex));
-           
+
+            return RedirectToAction(nameof(AdminIndex));
+
         }
 
 
@@ -139,7 +153,7 @@ namespace CLDV_POE_PART_TWO.Controllers
                     return NotFound();
                 }
             }
-           
+
 
             return View(order);
         }

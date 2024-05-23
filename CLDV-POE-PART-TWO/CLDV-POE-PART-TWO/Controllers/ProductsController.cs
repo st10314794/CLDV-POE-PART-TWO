@@ -109,6 +109,7 @@ namespace CLDV_POE_PART_TWO.Controllers
                     product.ImagePath = Path.Combine("Images", uniqueFileName);
 
                 }
+                product.InStock = true;
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(AdminIndex));

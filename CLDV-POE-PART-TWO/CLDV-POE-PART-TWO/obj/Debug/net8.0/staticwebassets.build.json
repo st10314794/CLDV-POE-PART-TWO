@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dDQaZ4y7nyO/YSszhzv0Eh6mwXSkbUgnvdVJYa05KT4=",
+  "Hash": "ebyTTBxaosurL006/4PTJNs84BQL87J1GzUbL+4PJP8=",
   "Source": "CLDV-POE-PART-TWO",
   "BasePath": "_content/CLDV-POE-PART-TWO",
   "Mode": "Default",
@@ -1421,6 +1421,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\f29d76a5-eae9-49c2-b194-76202a5ee1b2_Orbital Arcs.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\Images\\Metal-Sculpture.webp",
+      "SourceId": "CLDV-POE-PART-TWO",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\",
+      "BasePath": "_content/CLDV-POE-PART-TWO",
+      "RelativePath": "Images/Metal-Sculpture.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Metal-Sculpture.webp"
     },
     {
       "Identity": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\js\\site.js",

@@ -28,7 +28,7 @@ namespace CLDV_POE_PART_TWO
                 var user = await userManager.FindByEmailAsync("admin@gmail.com");
                 if (user == null)
                 {
-                    user = new IdentityUser { UserName = "admin@gmail.com", Email = "admin@gmail.com" };
+                    user = new IdentityUser { UserName = "admin@gmail.com", Email = "admin@gmail.com", EmailConfirmed = true };
                     var result = await userManager.CreateAsync(user, "AdminMan!23");
 
                     if (result.Succeeded)
