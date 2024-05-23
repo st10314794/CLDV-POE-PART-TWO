@@ -46,7 +46,11 @@ else
                 <td></td>
                 <td></td>
                 <td>
-                    <form asp-controller="Checkout" asp-action="ProceedToCheckout" method="post">
+                 
+
+                    <a asp-controller="Products" asp-action="Index" class="btn btn-success d-inline me-2">Continue Shopping</a>
+
+                    <form asp-controller="Checkout" asp-action="ProceedToCheckout" method="post" class="d-inline me-2">
 
                         <button type="submit" class="btn btn-success">Proceed to Checkout</button>
 

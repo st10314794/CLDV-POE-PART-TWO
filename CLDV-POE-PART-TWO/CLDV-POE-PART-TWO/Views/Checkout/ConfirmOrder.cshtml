@@ -18,10 +18,18 @@
 
 
 
-<form asp-controller="Checkout" asp-action="CreateOrder" method="post">
-   
+@* <form asp-controller="Checkout" asp-action="CreateOrder" method="post">
     <button type="submit" class="btn btn-success">Place Order</button>
 </form>
 <!--Moved out of form to avoid submitting it-->
 <a asp-controller="Carts" asp-action="ViewCart" class="btn btn-warning">Return to Cart</a>
 <a asp-controller="Carts" asp-action="ViewCart">Back to List</a>
+ *@
+
+
+<a asp-controller="Carts" asp-action="ViewCart" class="btn btn-warning d-inline me-2">Return to Cart</a>
+
+<form asp-controller="Checkout" asp-action="CreateOrder" method="post" class="d-inline me-2">
+    <button type="submit" class="btn btn-success">Place Order</button>
+</form>
+

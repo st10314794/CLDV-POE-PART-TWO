@@ -48,7 +48,7 @@ namespace CLDV_POE_PART_TWO.Controllers
         // GET: Products
         public async Task<IActionResult> AdminIndex()
         {
-
+            //To make category name able to display
             var products = await _context.Products
                 .Include(p => p.Category)
                 .ToListAsync();
@@ -58,7 +58,12 @@ namespace CLDV_POE_PART_TWO.Controllers
 
         public async Task<IActionResult> ClientIndex()
         {
-            return View(await _context.Products.ToListAsync());
+
+            var products = await _context.Products
+                .Include(p => p.Category)
+                .ToListAsync();
+
+            return View(products);
         }
 
         // GET: Products/Details/5

@@ -13,6 +13,8 @@
                     <img src="@Url.Content("~/" + craftworks.ImagePath)" class="card-img-top" />
                     <h5 class="card-title">@craftworks.ProductName</h5>
                     <p class="card-text">@craftworks.ProductDescription</p>
+                    <p class="card-text">@craftworks?.Category?.CategoryName</p>
+
                     <p>R @craftworks.Price</p>
 
                     @if (craftworks.InStock)
