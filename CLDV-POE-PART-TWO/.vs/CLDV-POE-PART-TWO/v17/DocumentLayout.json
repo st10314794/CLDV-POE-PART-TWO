@@ -3,47 +3,50 @@
   "WorkspaceRootPath": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\views\\products\\clientindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\products\\clientindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\views\\orders\\clientorderhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\orders\\clientorderhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_E26PAAD_SQLEXPRESS/CLDVPart2DB/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\views\\orders\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\orders\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\views\\orders\\clientindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\views\\orders\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\orders\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\cldv-poe-part-two\\views\\orders\\clientindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\views\\orders\\clientindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -51,10 +54,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_E26PAAD_SQLEXPRESS/CLDVPart2DB/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|c:\\users\\mik\\documents\\github\\cldv-poe-part-two\\cldv-poe-part-two\\cldv-poe-part-two\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE38EC12-DA2C-4BAF-BB92-BD476322A2C9}|CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO.csproj|solutionrelative:cldv-poe-part-two\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,13 +67,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Controllers\\OrdersController.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAowHoAAAAsAAAA",
+              "ViewState": "AQIAAJIBAAAAAAAAAAAswKoBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T06:46:59.345Z",
               "IsPinned": true,
@@ -82,13 +81,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAA7wAAAAAAAAAAA",
+              "ViewState": "AQIAAPUAAAAAAAAAAAAowAwBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T06:47:03.119Z",
               "IsPinned": true,
@@ -96,13 +95,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "CartsController.cs",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Controllers\\CartsController.cs",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Controllers\\CartsController.cs",
               "ToolTip": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Controllers\\CartsController.cs",
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Controllers\\CartsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAEEBAAAAAAAAAAAowFMBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T06:47:07.527Z",
               "IsPinned": true,
@@ -111,27 +110,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClientOrderHistory.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Orders\\ClientOrderHistory.cshtml",
-              "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Views\\Orders\\ClientOrderHistory.cshtml",
-              "ToolTip": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Orders\\ClientOrderHistory.cshtml",
-              "RelativeToolTip": "CLDV-POE-PART-TWO\\Views\\Orders\\ClientOrderHistory.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T06:48:44.551Z",
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_E26PAAD_SQLEXPRESS/CLDVPart2DB/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-24T08:12:04.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientIndex.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Products\\ClientIndex.cshtml",
-              "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Views\\Products\\ClientIndex.cshtml",
-              "ToolTip": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Products\\ClientIndex.cshtml",
-              "RelativeToolTip": "CLDV-POE-PART-TWO\\Views\\Products\\ClientIndex.cshtml",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T07:39:39.244Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CLDV-POE-PART-TWO\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T07:54:38.167Z",
               "EditorCaption": ""
             },
             {
@@ -142,14 +138,14 @@
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAEAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDYAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-24T07:12:18.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\wwwroot\\css\\site.css",
@@ -157,12 +153,11 @@
               "RelativeToolTip": "CLDV-POE-PART-TWO\\wwwroot\\css\\site.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-24T07:23:29.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T07:23:29.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Products\\Details.cshtml",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Views\\Products\\Details.cshtml",
@@ -170,12 +165,11 @@
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Views\\Products\\Details.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T07:15:47.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T07:15:47.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Views\\Shared\\_LoginPartial.cshtml",
@@ -183,12 +177,11 @@
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AQIAADsAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T07:15:13.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T07:15:13.326Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Views\\Shared\\_Layout.cshtml",
@@ -196,12 +189,11 @@
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T07:15:07.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T07:15:07.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AdminIndex.cshtml",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Orders\\AdminIndex.cshtml",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Views\\Orders\\AdminIndex.cshtml",
@@ -209,12 +201,11 @@
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Views\\Orders\\AdminIndex.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T07:11:43.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T07:11:43.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ClientIndex.cshtml",
               "DocumentMoniker": "C:\\Users\\Mik\\Documents\\GitHub\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\CLDV-POE-PART-TWO\\Views\\Orders\\ClientIndex.cshtml",
               "RelativeDocumentMoniker": "CLDV-POE-PART-TWO\\Views\\Orders\\ClientIndex.cshtml",
@@ -222,28 +213,25 @@
               "RelativeToolTip": "CLDV-POE-PART-TWO\\Views\\Orders\\ClientIndex.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAADQAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T06:49:01.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dbo.Order [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_E26PAAD_SQLEXPRESS/CLDVPart2DB/True/SqlTable/dbo.Order.sql",
-              "ToolTip": "dbo.Order [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-24T06:52:07.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T06:49:01.495Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "dbo.Order [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_E26PAAD_SQLEXPRESS/CLDVPart2DB/True/SqlTable/dbo.Order.sql",
+              "ToolTip": "dbo.Order [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-24T06:52:07.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "dbo.Products [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_E26PAAD_SQLEXPRESS/CLDVPart2DB/True/SqlTable/dbo.Products.sql",
               "ToolTip": "dbo.Products [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-24T06:53:38.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T06:53:38.599Z"
             }
           ]
         }

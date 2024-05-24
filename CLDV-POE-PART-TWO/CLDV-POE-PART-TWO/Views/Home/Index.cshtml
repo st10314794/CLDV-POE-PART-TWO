@@ -1,4 +1,5 @@
-﻿@{
+﻿@model CLDV_POE_PART_TWO.ViewModels.AdminDashboardViewModel
+@{
     ViewData["Title"] = "Home Page";
     bool isAdmin = User.IsInRole("Admin");
 }
@@ -14,7 +15,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Total Products</h5>
-                            <p class="card-text display-4">100</p> 
+                            <p class="card-text display-4">@Model.TotalProducts</p> 
                         </div>
                     </div>
                 </div>
@@ -22,7 +23,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Total Orders</h5>
-                            <p class="card-text display-4">50</p>
+                            <p class="card-text display-4">@Model.TotalOrders</p>
                         </div>
                     </div>
                 </div>
@@ -30,7 +31,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Total Users</h5>
-                            <p class="card-text display-4">200</p> 
+                            <p class="card-text display-4">@Model.TotalUsers</p> 
                         </div>
                     </div>
                 </div>
@@ -40,11 +41,14 @@
         <section class="admin-recent-activity mb-4">
             <h2 class="mb-3">Recent Activities</h2>
             <ul class="list-group">
-                <li class="list-group-item">Order #123 by John Doe - Pending - $99.99</li>
-                <li class="list-group-item">New Product "Handcrafted Vase" added</li>
-                <li class="list-group-item">User Jane Smith registered</li>
+                @foreach (var activity in Model.RecentActivities)
+                {
+                    <li class="list-group-item">@activity</li>
+                }
             </ul>
         </section>
+
+     
 
         <section class="admin-quick-actions">
             <h2 class="mb-3">Quick Actions</h2>
