@@ -1,36 +1,88 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    bool isAdmin = User.IsInRole("Admin");
 }
 
-
-
 <div class="text-center">
-    <h1 class="display-4">Welcome to Khumalo Craft</h1>
+    @if (isAdmin)
+    {
+        <h1 class="display-4 mb-4">Admin Dashboard</h1>
 
-    <p class="justified">
+        <section class="admin-overview mb-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Products</h5>
+                            <p class="card-text display-4">100</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Orders</h5>
+                            <p class="card-text display-4">50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Users</h5>
+                            <p class="card-text display-4">200</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        KhumaloCraft Emporium celebrates gifted artisants and their craftmanship from all around the globe. Our platform provides a marketplace, allowing
-        artisans from everywhere to share their products, their skills and their stories.
-    </p>
+        <section class="admin-recent-activity mb-4">
+            <h2 class="mb-3">Recent Activities</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Order #123 by John Doe - Pending - $99.99</li>
+                <li class="list-group-item">New Product "Handcrafted Vase" added</li>
+                <li class="list-group-item">User Jane Smith registered</li>
+            </ul>
+        </section>
 
-    <h2>Explore Handcrafted Treasures</h2>
-    <p class="justified">
+        <section class="admin-quick-actions">
+            <h2 class="mb-3">Quick Actions</h2>
+            <div class="d-flex justify-content-center">
+                <a asp-controller="Products" asp-action="Create" class="btn btn-primary me-2">Add New Product</a>
+                <a asp-controller="Orders" asp-action="Index" class="btn btn-secondary me-2">Manage Orders</a>
+                
+            </div>
+        </section>
+    }
+    else
+    {
+        <div class="text-center">
+            <h1 class="display-4 mb-4">Welcome to Khumalo Craft</h1>
+            <p class="lead mb-4">
+                KhumaloCraft Emporium celebrates gifted artisans and their craftsmanship from all around the globe. Our platform provides a marketplace, allowing
+                artisans from everywhere to share their products, their skills, and their stories.
+            </p>
 
-        You will find we have an incredibly diverse collection of handcrafted works from artisans, who worked painstakingly hard to produce fine, meticulously crafted works.
-        Our collection has elegant and intricate jewewlry, captivating sculptures and much more.
-    </p>
-    <h2>Shop with Purpose</h2>
-    <p class="justified">
+            <h2 class="mb-3">Explore Handcrafted Treasures</h2>
+            <p class="mb-4">
+                You will find we have an incredibly diverse collection of handcrafted works from artisans, who worked painstakingly hard to produce fine, meticulously crafted works.
+                Our collection has elegant and intricate jewelry, captivating sculptures, and much more.
+            </p>
+            <h2 class="mb-3">Shop with Purpose</h2>
+            <p class="mb-4">
+                Each purchase made by you gives support to these hardworking artisans from all over the globe. Help lift up these artisans and protect their livelihoods, tradition,
+                and culture.
+            </p>
 
-        Each purchase made by you gives support to these handworking artisans from all over the globe. Help lift up these artisans and protect their livelihoods, tradition
-        and culture.
-    </p>
-
-    <h2>Start Your Journey Today</h2>
-    <p class="justified">
-
-        Start your journey today, and dive into the world of arts and craftmanship with KhumaloCraft Emporium.
-    </p>
-
-
+            <h2 class="mb-3">Start Your Journey Today</h2>
+            <p class="mb-4">
+                Start your journey today, and dive into the world of arts and craftsmanship with KhumaloCraft Emporium.
+            </p>
+        </div>
+    }
 </div>
+    
+    
+
+ 

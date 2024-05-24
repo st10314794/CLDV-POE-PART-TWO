@@ -84,7 +84,7 @@ namespace CLDV_POE_PART_TWO.Controllers
 
 
             var userOrders = await _context.Order
-                .Where(o => o.UserID == user.Id)
+                .Where(o => o.UserID == user.Id && o.OrderStatus == OrderStatus.Pending)
                 .ToListAsync();
             return View(userOrders);
         }
@@ -121,6 +121,8 @@ namespace CLDV_POE_PART_TWO.Controllers
 
 
             order.OrderStatus = orderStatus;
+            order.ModifiedDate = DateTime.Now;
+
             _context.Update(order);
             await _context.SaveChangesAsync();
 
