@@ -48,6 +48,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\03e5bf12-d60d-462a-ab39-56e177d817d3_Beaded-Metal-Bracelet.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>CLDV-POE-PART-TWO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CLDV-POE-PART-TWO</BasePath>
+      <RelativePath>Images/03e5bf12-d60d-462a-ab39-56e177d817d3_Beaded-Metal-Bracelet.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\03e5bf12-d60d-462a-ab39-56e177d817d3_Beaded-Metal-Bracelet.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\04d450b5-4c15-40a6-b6f4-43dea93ab6a2_Avian Grace.webp))">
       <SourceType>Package</SourceType>
       <SourceId>CLDV-POE-PART-TWO</SourceId>
@@ -63,6 +79,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\04d450b5-4c15-40a6-b6f4-43dea93ab6a2_Avian Grace.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\1254ffa7-74ff-42ad-b4ca-54bd5ed2ecdb_Hand-Painted Decorative Plate Collection.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>CLDV-POE-PART-TWO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CLDV-POE-PART-TWO</BasePath>
+      <RelativePath>Images/1254ffa7-74ff-42ad-b4ca-54bd5ed2ecdb_Hand-Painted Decorative Plate Collection.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\1254ffa7-74ff-42ad-b4ca-54bd5ed2ecdb_Hand-Painted Decorative Plate Collection.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\1485c25e-46bc-45d3-9686-00d48e06b9da_Water Droplet.webp))">
       <SourceType>Package</SourceType>
@@ -128,6 +160,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\5da4e4ef-fa3e-4704-98e9-3fe1e523508d_cat-sunglasses-gangster-digital-art-animal-hd-wallpaper-uhdpaper.com-241@0@j.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\7685e893-c4ee-4e3e-a2d9-050cd8c695d4_Bracelet.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>CLDV-POE-PART-TWO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CLDV-POE-PART-TWO</BasePath>
+      <RelativePath>Images/7685e893-c4ee-4e3e-a2d9-050cd8c695d4_Bracelet.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\7685e893-c4ee-4e3e-a2d9-050cd8c695d4_Bracelet.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\78b5c121-c284-4bab-888e-9cc7d5cdb2de_Avian Grace.webp))">
       <SourceType>Package</SourceType>
       <SourceId>CLDV-POE-PART-TWO</SourceId>
@@ -144,6 +192,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\78b5c121-c284-4bab-888e-9cc7d5cdb2de_Avian Grace.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\7c6cd7f1-380a-47dc-ac84-a23bef3fef1b_Ceramic Teapot.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>CLDV-POE-PART-TWO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CLDV-POE-PART-TWO</BasePath>
+      <RelativePath>Images/7c6cd7f1-380a-47dc-ac84-a23bef3fef1b_Ceramic Teapot.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\7c6cd7f1-380a-47dc-ac84-a23bef3fef1b_Ceramic Teapot.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\8bf313eb-1161-48c8-8a53-d0e4e2e2b6ef_Vase.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>CLDV-POE-PART-TWO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CLDV-POE-PART-TWO</BasePath>
+      <RelativePath>Images/8bf313eb-1161-48c8-8a53-d0e4e2e2b6ef_Vase.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\8bf313eb-1161-48c8-8a53-d0e4e2e2b6ef_Vase.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\a64d5599-0d60-4aea-b587-f47b9b64ac1c_Avian Grace.webp))">
       <SourceType>Package</SourceType>
       <SourceId>CLDV-POE-PART-TWO</SourceId>
@@ -159,6 +239,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\a64d5599-0d60-4aea-b587-f47b9b64ac1c_Avian Grace.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\b90e7006-4079-4d23-8350-4c6a4b5ac656_Iron Wave Sculpture.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>CLDV-POE-PART-TWO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CLDV-POE-PART-TWO</BasePath>
+      <RelativePath>Images/b90e7006-4079-4d23-8350-4c6a4b5ac656_Iron Wave Sculpture.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\b90e7006-4079-4d23-8350-4c6a4b5ac656_Iron Wave Sculpture.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\c73ee910-f71f-43e3-a757-b34bc9773a28_Wooden-Bowl.webp))">
       <SourceType>Package</SourceType>
@@ -192,6 +288,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\e0f30d20-d19b-4c1b-9bc4-6b3bc2888fea_Wooden-Bowl.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\ec61e4b4-fc68-4604-84f7-0c5b85395f41_Wooden Jewelry Box.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>CLDV-POE-PART-TWO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CLDV-POE-PART-TWO</BasePath>
+      <RelativePath>Images/ec61e4b4-fc68-4604-84f7-0c5b85395f41_Wooden Jewelry Box.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\ec61e4b4-fc68-4604-84f7-0c5b85395f41_Wooden Jewelry Box.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\f29d76a5-eae9-49c2-b194-76202a5ee1b2_Orbital Arcs.webp))">
       <SourceType>Package</SourceType>
       <SourceId>CLDV-POE-PART-TWO</SourceId>
@@ -207,6 +319,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\f29d76a5-eae9-49c2-b194-76202a5ee1b2_Orbital Arcs.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\fb08ee2c-913b-4a83-81b2-2205de2a6e0f_Wooden Unicorn Sculpture.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>CLDV-POE-PART-TWO</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CLDV-POE-PART-TWO</BasePath>
+      <RelativePath>Images/fb08ee2c-913b-4a83-81b2-2205de2a6e0f_Wooden Unicorn Sculpture.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\fb08ee2c-913b-4a83-81b2-2205de2a6e0f_Wooden Unicorn Sculpture.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Metal-Sculpture.webp))">
       <SourceType>Package</SourceType>

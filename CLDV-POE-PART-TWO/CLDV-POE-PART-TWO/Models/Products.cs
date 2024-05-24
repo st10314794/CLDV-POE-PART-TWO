@@ -10,8 +10,7 @@ namespace CLDV_POE_PART_TWO.Models
         public int ProductID { get; set; }
         [Display(Name = "Product Name")]
         public string? ProductName { get; set; }
-        [Display(Name = "Description")]
-        public string? ProductDescription { get; set; }
+      
         public decimal Price { get; set; }
         [Display(Name = "In Stock")]
         public bool InStock { get; set; }

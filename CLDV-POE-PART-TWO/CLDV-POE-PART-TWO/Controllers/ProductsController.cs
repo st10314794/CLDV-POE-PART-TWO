@@ -144,7 +144,7 @@ namespace CLDV_POE_PART_TWO.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryID", products.CategoryID);
+            ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryName", products.CategoryID);
             return View(products);
         }
 
