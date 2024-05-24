@@ -3,23 +3,24 @@
 
 @{
     ViewData["Title"] = "Index";
+    var statusFilter = ViewBag.CurrentFilter as OrderStatus?;
+
 }
 
 <h1>Customer Orders</h1>
 
 
-<form asp-action="AdminIndex" method="get">
-    <select name="statusFilter" onchange="this.form.submit()">
-        <option value="">All</option>
-        @foreach (var status in Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>())
-        {
-             var selected = (ViewData["CurrentFilter"]?.ToString() == status.ToString()) ? "selected" : "";
-            <option value="@status" selected>@status</option>
 
+<form method="get" asp-action="AdminIndex">
+    <label for="statusFilter">Filter by Status:</label>
+    <select id="statusFilter" name="statusFilter" onchange="this.form.submit()">
+        <option value="">All</option>
+        @foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus)))
+        {
+            @Html.Raw($"<option value=\"{status}\" {(statusFilter.HasValue && statusFilter.Value == status ? "selected" : "")}>{status}</option>")
         }
     </select>
 </form>
-
 </p>
 <table class="table">
     <thead>
@@ -40,6 +41,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.ModifiedDate)
             </th>
+            <th>
+                Change Status
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -51,7 +55,7 @@
                     @Html.DisplayFor(modelItem => item.OrderID)
                 </td>
                 <td>
-                   R @Html.DisplayFor(modelItem => item.TotalPrice)
+                    R @Html.DisplayFor(modelItem => item.TotalPrice)
                 </td>
 
                 <td>
@@ -64,34 +68,36 @@
                     @Html.DisplayFor(modelItem => item.ModifiedDate)
                 </td>
 
-               @*  <td>
-                  
+
+                <td>
+                    @{
+                        var excludedStatus = OrderStatus.Pending; // Define the status to exclude
+                    }
+
                     <form asp-action="ChangeStatus" method="post">
                         <input type="hidden" name="OrderID" value="@item.OrderID" />
                         <select name="OrderStatus" onchange="this.form.submit()">
-                            @foreach (var status in Enum.GetValues(typeof(OrderStatus)))
+                            @if (item.OrderStatus == OrderStatus.Pending)
                             {
-                                var selected = item.OrderStatus == (OrderStatus)status ? "selected" : "";
-                                <option value="@status" selected>@status</option>
+                                <option value="" selected></option>
+                                @foreach (var status in Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>().Where(s => s != OrderStatus.Pending))
+                                {
+                                    @Html.Raw($"<option value=\"{status}\">{status}</option>")
+                                }
+                            }
+                            else
+                            {
+                                @foreach (var status in Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>().Where(s => s != OrderStatus.Pending))
+                                {
+                                    var selected = item.OrderStatus == status ? "selected" : "";
+                                    @Html.Raw($"<option value=\"{status}\" {selected}>{status}</option>")
+                                }
                             }
                         </select>
                     </form>
-                </td> *@
+                </td>
                 <td>
-                      @{
-    var excludedStatus = OrderStatus.Pending; // Define the status to exclude
-}
-                   <form asp-action="ChangeStatus" method="post">
-                        <input type="hidden" name="OrderID" value="@item.OrderID" />
-                        <select name="OrderStatus" onchange="this.form.submit()">
-                            @foreach (var status in Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>().Where(s => s != excludedStatus))
-                            {
-                                var selected = item.OrderStatus == (OrderStatus)status ? "selected" : "";
-                                <option value="@status" selected>@status</option>
-                            }
-                        </select>
-                    </form>
-                <td>
+
                     <a asp-action="Details" asp-route-id="@item.OrderID">Details</a> |
                 </td>
             </tr>
