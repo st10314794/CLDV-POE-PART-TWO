@@ -23,8 +23,8 @@
                     <ul class="navbar-nav flex-grow-1">
                         @if (SignInManager.IsSignedIn(User))
                         {
-                           @if (User.IsInRole("Admin"))
-                        {
+                            @if (User.IsInRole("Admin"))
+                            {
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
                                 </li>
@@ -32,45 +32,49 @@
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="Index">Orders</a>
                                 </li>
 
-                        } 
-                        else{
-                            <li class="nav-item">
+                            }
+                            else
+                            {
+
+
+                                <li class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Index" && ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Products" ? "active" : "")">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">My Work</a>
                                 </li>
-
-                                <li class="nav-item">
+                                <li class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "AboutUs" ? "active" : "")">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "ContactUs" ? "active" : "")">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
                                 </li>
+                            }
                         }
-                        } else{
-                           
+                        else
+                        {
+
                             <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">My Work</a>
-                                </li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">My Work</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
-                                </li>
-                        
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+                            </li>
+
                         }
-                            
 
-                                
-                            
-                        
-                    
+
+
+
+
+
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

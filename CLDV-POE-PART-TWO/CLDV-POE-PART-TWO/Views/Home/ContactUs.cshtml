@@ -6,8 +6,9 @@
 <div class="text-center">
     <h1>Contact Us</h1>
 
+
     <div class="form-container">
-        <form id="contact-form">
+        <form id="contact-form" onsubmit="return validateForm(event)">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required />
@@ -20,14 +21,20 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Enter Message here..." required></textarea>
             </div>
-            <button type="button" id="submit-button" onclick="showMessage()">Submit</button>
+            <button type="submit" id="submit-button">Submit</button>
         </form>
         <span id="submit-message" style="display:none;">Your message has been sent!</span>
     </div>
-  
-    
-           
 
 
-    
+
+
 </div>
+
+
+
+
+
+
+
+
