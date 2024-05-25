@@ -168,15 +168,6 @@ namespace CLDV_POE_PART_TWO.Controllers
             return View();
         }
 
-
-   
-
-
-
-
-
-
-
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -190,6 +181,12 @@ namespace CLDV_POE_PART_TWO.Controllers
             if (order == null)
             {
                 return NotFound();
+            }
+
+            if (order.OrderStatus != OrderStatus.Pending)
+            {
+                return Unauthorized("Order has been processed and can no longer be cancelled.");
+
             }
 
             return View(order);
@@ -217,11 +214,11 @@ namespace CLDV_POE_PART_TWO.Controllers
 
                     if (orderItem.Product != null)
                     {
-                        orderItem.Product.InStock = true; 
-                        _context.Products.Update(orderItem.Product); 
+                        orderItem.Product.InStock = true;
+                        _context.Products.Update(orderItem.Product);
                     }
 
-                
+
                 }
             }
 

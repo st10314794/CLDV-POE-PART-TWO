@@ -24,48 +24,18 @@ namespace CLDV_POE_PART_TWO.Controllers
             _userManager = userManager;
         }
 
-
-
-
-        //public async Task<IActionResult> AddToCart(int productId)
-        //{
-        //    var product = await _context.Products
-        //                                .Where(p => p.ProductID == productId && p.InStock)
-        //                                .FirstOrDefaultAsync();
-
-        //    if (product == null)
-        //    {
-        //        return NotFound("Product not available.");
-        //    }
-
-        //    product.InStock = false;  // Mark the product as unavailable
-
-        //    var user = await _userManager.GetUserAsync(User);
-        //    var cart = await _context.Carts
-        //                             .Include(c => c.CartItems)
-        //                             .SingleOrDefaultAsync(c => c.UserID == user.Id);
-
-        //    if (cart == null)
-        //    {
-        //        cart = new Cart { UserID = user.Id };
-        //        _context.Carts.Add(cart);
-        //    }
-
-        //    cart.CartItems.Add(new CartItem { ProductID = productId });
-
-        //    await _context.SaveChangesAsync();
-        //    return RedirectToAction("ViewCart");
-        //}
         [HttpPost]
         public async Task<IActionResult> AddToCart(int productId)
         {
             var user = await _userManager.GetUserAsync(User);
-            if (user == null) return Challenge();  // Redirects to login if not logged in
+            //Makes user login if not already
+            if (user == null) return Challenge();  
 
             var product = await _context.Products.FindAsync(productId);
             if (product == null) return NotFound("Product not available.");
 
-            product.InStock = false;  // Mark the product as unavailable
+            //Making product unavailable
+            product.InStock = false; 
 
             var cart = await _context.Carts.Include(c => c.CartItems)
                                            .SingleOrDefaultAsync(c => c.UserID == user.Id);
@@ -100,14 +70,14 @@ namespace CLDV_POE_PART_TWO.Controllers
                 return NotFound();
             }
 
-            // Optionally, you can update the product stock status
-            cartItem.Products.InStock = true;  // Mark the product as available again if needed
+           //Making product available again when removed from cart
+            cartItem.Products.InStock = true;  
 
             // Remove the cart item from the database
             _context.CartItems.Remove(cartItem);
             await _context.SaveChangesAsync();
 
-            // Redirect to the cart view
+           
             return RedirectToAction("ViewCart");
         }
 
@@ -172,168 +142,6 @@ namespace CLDV_POE_PART_TWO.Controllers
             };
 
             return View("ViewCart", cartViewModel);
-        }
-
-        //public async Task<IActionResult> ViewCart()
-        //{
-        //    var user = await _userManager.GetUserAsync(User);
-        //    if (user == null) return Challenge();
-
-        //    var cart = await _context.Carts
-        //                             .Include(c => c.CartItems)
-        //                                 .ThenInclude(ci => ci.Products)
-        //                             .FirstOrDefaultAsync(c => c.UserID == user.Id);
-
-        //    if (cart == null)
-        //    {
-        //        return View(new CartViewModel());
-        //    }
-
-        //    var cartViewModel = new CartViewModel
-        //    {
-        //        CartItems = cart.CartItems.Select(ci => new CartItemViewModel
-        //        {
-        //            CartItemID = ci.CartItemID,
-        //            ProductName = ci.Products.ProductName,
-        //            Price = ci.Products.Price,
-        //            ImagePath = ci.Products.ImagePath
-        //        }).ToList(),
-        //        TotalPrice = cart.CartItems.Sum(item => item.Products.Price)
-        //    };
-
-        //    return View(cartViewModel);
-        //}
-
-
-
-        // GET: Carts/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var cart = await _context.Carts
-                .Include(c => c.User)
-                .FirstOrDefaultAsync(m => m.CartID == id);
-            if (cart == null)
-            {
-                return NotFound();
-            }
-
-            return View(cart);
-        }
-
-        // GET: Carts/Create
-        public IActionResult Create()
-        {
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id");
-            return View();
-        }
-
-        // POST: Carts/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CartID,UserID")] Cart cart)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(cart);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", cart.UserID);
-            return View(cart);
-        }
-
-        // GET: Carts/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var cart = await _context.Carts.FindAsync(id);
-            if (cart == null)
-            {
-                return NotFound();
-            }
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", cart.UserID);
-            return View(cart);
-        }
-
-        // POST: Carts/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CartID,UserID")] Cart cart)
-        {
-            if (id != cart.CartID)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(cart);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CartExists(cart.CartID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Id", cart.UserID);
-            return View(cart);
-        }
-
-        // GET: Carts/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var cart = await _context.Carts
-                .Include(c => c.User)
-                .FirstOrDefaultAsync(m => m.CartID == id);
-            if (cart == null)
-            {
-                return NotFound();
-            }
-
-            return View(cart);
-        }
-
-        // POST: Carts/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var cart = await _context.Carts.FindAsync(id);
-            if (cart != null)
-            {
-                _context.Carts.Remove(cart);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
         }
 
         private bool CartExists(int id)

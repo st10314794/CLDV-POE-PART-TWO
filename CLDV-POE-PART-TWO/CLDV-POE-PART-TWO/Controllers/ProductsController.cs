@@ -44,8 +44,9 @@ namespace CLDV_POE_PART_TWO.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin")]
         // GET: Products
+
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AdminIndex()
         {
             //To make category name able to display
@@ -67,6 +68,7 @@ namespace CLDV_POE_PART_TWO.Controllers
         }
 
         // GET: Products/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -86,6 +88,7 @@ namespace CLDV_POE_PART_TWO.Controllers
         }
 
         // GET: Products/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryName");
@@ -132,6 +135,7 @@ namespace CLDV_POE_PART_TWO.Controllers
 
 
         // GET: Products/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -157,6 +161,7 @@ namespace CLDV_POE_PART_TWO.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("ProductID,ProductName,ProductDescription,Price,InStock,ImagePath,Image,CategoryID")] Products product)
         {
             if (id != product.ProductID)
@@ -227,6 +232,7 @@ namespace CLDV_POE_PART_TWO.Controllers
 
 
         // GET: Products/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -248,6 +254,7 @@ namespace CLDV_POE_PART_TWO.Controllers
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var products = await _context.Products.FindAsync(id);

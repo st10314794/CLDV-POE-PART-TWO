@@ -17,14 +17,8 @@
 
                     <p>@craftworks.FormattedPrice</p>
 
-                    @if (craftworks.InStock)
-                    {
-                        <p>In Stock</p>
-                    }
-                    else
-                    {
-                        <p>Out of Stock</p>
-                    }
+                   
+                  
                     @if (craftworks.InStock)
                     {
                         <form asp-controller="Carts" asp-action="AddToCart" method="post">

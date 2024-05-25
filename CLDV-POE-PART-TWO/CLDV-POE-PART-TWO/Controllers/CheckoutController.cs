@@ -36,7 +36,7 @@ namespace CLDV_POE_PART_TWO.Controllers
 
             if (cart == null || !cart.CartItems.Any())
             {
-                return RedirectToAction("Index", "Home"); // Handle empty cart scenario
+                return RedirectToAction("Index", "Home"); 
             }
 
             var cartViewModel = new CartViewModel
@@ -51,7 +51,7 @@ namespace CLDV_POE_PART_TWO.Controllers
                 TotalPrice = cart.CartItems.Sum(item => item.Products.Price)
             };
 
-            return View("ConfirmOrder", cartViewModel); // Navigate to the confirmation page
+            return View("ConfirmOrder", cartViewModel); 
         }
 
         [HttpPost]
@@ -68,7 +68,7 @@ namespace CLDV_POE_PART_TWO.Controllers
 
             if (cart == null || !cart.CartItems.Any())
             {
-                return RedirectToAction("Index", "Home"); // Handle empty cart scenario
+                return RedirectToAction("Index", "Home"); 
             }
 
             var cartViewModel = new CartViewModel
@@ -83,7 +83,7 @@ namespace CLDV_POE_PART_TWO.Controllers
                 TotalPrice = cart.CartItems.Sum(item => item.Products.Price)
             };
 
-            return View("ConfirmOrder", cartViewModel); // Navigate to the cart confirmation page
+            return View("ConfirmOrder", cartViewModel); 
         }
 
         public async Task<IActionResult> OrderConfirmation(int orderId)
@@ -91,24 +91,24 @@ namespace CLDV_POE_PART_TWO.Controllers
             var user = await _userManager.GetUserAsync(User);
             // Retrieve the order using the provided order ID
             var order = await _context.Order
-                                      .Include(o => o.OrderItems)  // Assuming you have a related collection of order items
-                                      .ThenInclude(oi => oi.Product)  // Assuming each order item includes product details
+                                      .Include(o => o.OrderItems)  
+                                      .ThenInclude(oi => oi.Product)  
                                       .FirstOrDefaultAsync(o => o.OrderID == orderId);
 
             // Check if the order exists
             if (order == null)
             {
-                return NotFound(); // Return a NotFound view or a custom error message if the order doesn't exist
+                return NotFound(); 
             }
 
-            // Optionally check if the logged-in user has the right to view this order
+            
             if (!order.UserID.Equals(user.Id))
             {
                 return Unauthorized("You do not have permission to view this order.");
-                //return Unauthorized(); // Prevent users from seeing other users' order confirmations
+                
             }
 
-            // Return the view with the order model
+         
             return View(order);
         }
 
@@ -121,7 +121,7 @@ namespace CLDV_POE_PART_TWO.Controllers
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
-                return Challenge(); // Ensures user is logged in
+                return Challenge(); 
 
             var cart = await _context.Carts
                                      .Include(c => c.CartItems)
@@ -129,9 +129,9 @@ namespace CLDV_POE_PART_TWO.Controllers
                                      .FirstOrDefaultAsync(c => c.UserID == user.Id);
 
             if (cart == null || !cart.CartItems.Any())
-                return RedirectToAction("Index", "Home"); // Handle empty cart scenario
+                return RedirectToAction("Index", "Home"); 
 
-            // Create a new order object from the cart data
+            
             var order = new Order
             {
                 UserID = user.Id,
@@ -139,7 +139,7 @@ namespace CLDV_POE_PART_TWO.Controllers
                 CreatedDate = DateTime.Now,
                 ModifiedDate = DateTime.Now,
                 OrderStatus = Enums.OrderStatus.Pending,
-                TotalPrice = cart.CartItems.Sum(item => item.Products.Price), // Calculate total price
+                TotalPrice = cart.CartItems.Sum(item => item.Products.Price), 
                 // Creating order items
                 OrderItems = cart.CartItems.Select(ci => new OrderItem
                 {
@@ -153,17 +153,16 @@ namespace CLDV_POE_PART_TWO.Controllers
                                       .OrderBy(o => o.CreatedDate)
                                       .ToListAsync();
 
-            // Set the user-specific order number
+            
             order.UserOrderNumber = userOrders.Count + 1;
 
             _context.Order.Add(order);
             await _context.SaveChangesAsync();
 
-            // Optionally clear the cart here or mark as completed
+           
             _context.Carts.Remove(cart);
             await _context.SaveChangesAsync();
 
-            //return RedirectToAction("OrderConfirmation", new { orderId = order.OrderID });
             return RedirectToAction("OrderDetails", new { orderId = order.OrderID });
         }
 

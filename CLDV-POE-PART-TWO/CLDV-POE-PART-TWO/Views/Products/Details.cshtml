@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Details";
+   bool isInStock = Model.InStock;
 }
 
 <h1>Details</h1>
@@ -21,13 +22,21 @@
             @Html.DisplayNameFor(model => model.Price)
         </dt>
         <dd class = "col-sm-10">
-           R @Html.DisplayFor(model => model.FormattedPrice)
+            @Html.DisplayFor(model => model.FormattedPrice)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.InStock)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.InStock)
+           
+            @if (isInStock)
+            {
+                <span class="badge bg-success">In Stock</span>
+            }
+            else
+            {
+                <span class="badge bg-danger">Out of Stock</span>
+            }
         </dd>
         <dt class = "col-sm-2">
             Image
