@@ -1,6 +1,5 @@
 ﻿@model CLDV_POE_PART_TWO.ViewModels.CartViewModel
 
-
 <h1>Shopping Cart</h1>
 
 
@@ -23,7 +22,7 @@ else
             {
                 <tr>
                     <td>@item.ProductName</td>
-                    <td>@item.Price</td>
+                    <td>@item.FormattedPrice</td>
                     <td>
 
                         <form asp-action="RemoveFromCart" method="post">
@@ -41,7 +40,7 @@ else
                 <td></td>
                 <td></td>
                 <td>Total:</td>
-                <td>@Model.TotalPrice.ToString("C")</td>
+                <td>@Model.FormattedTotalPrice</td>
                 <td></td>
                 <td></td>
                 <td></td>

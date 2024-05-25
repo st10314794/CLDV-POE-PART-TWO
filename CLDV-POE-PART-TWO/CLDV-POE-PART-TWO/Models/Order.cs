@@ -1,6 +1,7 @@
 ﻿using CLDV_POE_PART_TWO.Enums;
 using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CLDV_POE_PART_TWO.Models
 {
@@ -14,8 +15,16 @@ namespace CLDV_POE_PART_TWO.Models
         public string? UserID { get; set; }
         [Display(Name = "Total Price")]
         public decimal TotalPrice { get; set; }
-       
-       // public string? Status { get; set; }
+        [NotMapped]
+        public string FormattedPrice
+        {
+            get
+            {
+                return $"R{TotalPrice:N2}";
+            }
+        }
+
+        // public string? Status { get; set; }
 
         [Display(Name = "Order Created")]
 
@@ -23,8 +32,7 @@ namespace CLDV_POE_PART_TWO.Models
         [Display(Name = "Order Modified")]
 
         public DateTime ModifiedDate { get; set; }
-        public string? Address { get; set; }  // New address field
-
+       
 
         //Navigation Properties
 

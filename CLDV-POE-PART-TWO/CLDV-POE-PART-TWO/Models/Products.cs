@@ -12,6 +12,17 @@ namespace CLDV_POE_PART_TWO.Models
         public string? ProductName { get; set; }
       
         public decimal Price { get; set; }
+
+        //Formatted Price
+        [NotMapped]
+        public string FormattedPrice
+        {
+            get
+            {
+                return $"R{Price:N2}";
+            }
+        }
+
         [Display(Name = "In Stock")]
         public bool InStock { get; set; }
         public string? ImagePath { get; set; }

@@ -15,10 +15,7 @@
     <p><strong>Total: $@Model.TotalPrice</strong></p>
 </div>
 
-<div>
-    <h3>Address</h3>
-    <p>@Model.Address</p>
-</div>
+
 
 <form asp-controller="Checkout" asp-action="CreateOrder" method="post">
     <input type="hidden" name="orderId" value="@Model.OrderID" />

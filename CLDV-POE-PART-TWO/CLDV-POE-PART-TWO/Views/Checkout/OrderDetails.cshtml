@@ -7,15 +7,12 @@
     <ul>
         @foreach (var item in Model.OrderItems)
         {
-            <li>@item.Product.ProductName - @item.Price.ToString("C")</li>
+            <li>@item.Product.ProductName - @item.FormattedPrice</li>
         }
     </ul>
-    <p><strong>Total: @Model.TotalPrice.ToString("C")</strong></p>
+    <p><strong>Total: @Model.FormattedPrice</strong></p>
 </div>
 
-<div>
-    <h3>Address</h3>
-    <p>@Model.Address</p>
-</div>
+
 
 <a asp-controller="Products" asp-action="Index" class="btn btn-primary">Continue Shopping</a>

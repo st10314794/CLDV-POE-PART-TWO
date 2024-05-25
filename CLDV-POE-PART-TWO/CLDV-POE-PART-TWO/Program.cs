@@ -1,9 +1,12 @@
 using CLDV_POE_PART_TWO;
 using CLDV_POE_PART_TWO.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 
 //For email conffirmation service
@@ -39,6 +42,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+//app.UseRequestLocalization();
+
 
 app.UseAuthorization();
 

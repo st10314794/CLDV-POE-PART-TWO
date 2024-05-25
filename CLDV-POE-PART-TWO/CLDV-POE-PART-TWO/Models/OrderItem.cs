@@ -14,6 +14,14 @@ namespace CLDV_POE_PART_TWO.Models
         public int ProductID { get; set; }
      
         public decimal Price { get; set; }
+        [NotMapped]
+        public string FormattedPrice
+        {
+            get
+            {
+                return $"R{Price:N2}";
+            }
+        }
 
         //Navigation Properties
         public virtual Order Order { get; set; }
