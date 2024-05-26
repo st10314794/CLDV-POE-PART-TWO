@@ -43,12 +43,7 @@ namespace CLDV_POE_PART_TWO.Controllers
             }
         }
 
-        //  [Authorize(Roles = "Admin")]
-        ////  GET: Products
-        //public async Task<IActionResult> AdminIndex()
-        //{
-        //    return View(await _context.Order.ToListAsync());
-        //}
+      
 
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AdminIndex(OrderStatus? statusFilter)
@@ -227,124 +222,7 @@ namespace CLDV_POE_PART_TWO.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
-
-        //// GET: Orders/Delete/5
-        //public async Task<IActionResult> Delete(int? id)
-        //{
-        //    Console.WriteLine($"Order Delete Action.");
-
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    var user = await _userManager.GetUserAsync(User);
-
-        //    var order = await _context.Order
-        //        .FirstOrDefaultAsync(m => m.OrderID == id);
-        //    if (order == null || order.UserID != user.Id)
-        //    {
-        //        return NotFound();
-        //    }
-
-
-
-        //    return View(order);
-        //}
-
-
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> DeleteConfirmed(int id)
-        //{
-        //    var order = await _context.Order
-        //                              .Include(o => o.OrderItems)
-        //                              .ThenInclude(oi => oi.Product)
-        //                              .FirstOrDefaultAsync(o => o.OrderID == id);
-
-        //    //if (order != null)
-        //    //{
-        //    //    foreach (var orderItem in order.OrderItems)
-        //    //    {
-        //    //        // Assuming you have a property `Availability` in the Product model
-        //    //        orderItem.Product.InStock = true; // Update availability to true
-        //    //        _context.Products.Update(orderItem.Product); // Update the product in the context
-        //    //    }
-
-        //    //    if (order != null)
-        //    //    {
-        //    //        // Update the availability of the products before deleting the order
-        //    //        foreach (var orderItem in order.OrderItems)
-        //    //        {
-        //    //            if (orderItem.Product != null)
-        //    //            {
-        //    //                orderItem.Product.InStock = true; // Update availability to true
-        //    //                _context.Products.Update(orderItem.Product); // Update the product in the context
-        //    //            }
-        //    //        }
-
-        //    //        await _context.SaveChangesAsync();
-
-        //    //    _context.Order.Remove(order);
-        //    //    await _context.SaveChangesAsync();
-        //    //}
-        //    Console.WriteLine($"Order DeleteConfirmed Action.");
-
-
-        //    if (order != null)
-        //    {
-        //        foreach (var orderItem in order.OrderItems)
-        //        {
-        //            if (orderItem.Product != null)
-        //            {
-        //                orderItem.Product.InStock = true; // Update availability to true
-        //                _context.Products.Update(orderItem.Product); // Update the product in the context
-        //                Console.WriteLine($"Updated Product {orderItem.Product.ProductID} InStock to true.");
-        //            }
-        //        }
-
-        //        await _context.SaveChangesAsync();
-
-        //        _context.Order.Remove(order);
-        //        await _context.SaveChangesAsync();
-
-        //        Console.WriteLine($"Order {order.OrderID} deleted.");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine($"Order {id} not found.");
-        //    }
-
-        //    return RedirectToAction(nameof(Index));
-        //}
-
-
-        // POST: Orders/Delete/5
-        // [HttpPost, ActionName("Delete")]
-        // [ValidateAntiForgeryToken]
-        // public async Task<IActionResult> DeleteConfirmed(int id)
-        // {
-
-
-        //     var order = await _context.Order
-        //.Include(o => o.OrderItems)
-        //.ThenInclude(oi => oi.Product)
-        //.FirstOrDefaultAsync(o => o.OrderID == id);
-
-        //     //var order = await _context.Order
-        //     //    .FindAsync(id);
-
-
-
-        //     if (order != null)
-        //     {
-        //         _context.Order.Remove(order);
-
-        //     }
-
-        //     await _context.SaveChangesAsync();
-        //     return RedirectToAction(nameof(Index));
-        // }
+                
 
         private bool OrderExists(int id)
         {
