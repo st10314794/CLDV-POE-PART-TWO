@@ -43,7 +43,7 @@ namespace CLDV_POE_PART_TWO.Controllers
             var recentOrders = await _context.Order
                 .Include(o => o.User)
                 .OrderByDescending(o => o.CreatedDate)
-                .Take(5)
+                .Take(4)
                 .ToListAsync();
 
             foreach (var order in recentOrders)
